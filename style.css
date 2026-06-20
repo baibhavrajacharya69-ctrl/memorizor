@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body { 
+    text-align: center; 
+    font-family: 'Comic Neue', cursive; 
+    background: #ffffff; 
+    color: #4D4D4D; 
+    margin: 0;
+    padding-top: 20px;
+}
+
+h1 { font-size: 3rem; text-shadow: 3px 3px 0px #FFF; color: #FF6B6B; }
+
+#game-container { 
+    display: grid; 
+    grid-template-columns: repeat(3, 190px); 
+    gap: 15px; 
+    justify-content: center; 
+    margin: 40px auto;
+    padding: 20px;
+    background: #6C5CE7; 
+    border: 8px solid #FFF;
+    border-radius: 20px;
+    width: fit-content; 
+}
+
+.pad { 
+    width: 150px; 
+    height: 150px; 
+    cursor: pointer; 
+    border-radius: 15px; 
+    border: 4px solid rgba(0,0,0,0.2);
+    transition: transform 0.1s;
+}
+
+#green { background-color: #2ECC71; }
+#red { background-color: #FF7675; }
+#yellow { background-color: #FDCB6E; }
+#blue { background-color: #74B9FF; }
+#orange { background-color: #FF9F43; }
+#purple { background-color: #A29BFE; }
+
+.active { 
+    transform: scale(0.9) rotate(2deg); 
+    border: 8px solid #FFF;
+    box-shadow: 0 0 20px #FFF;
+}
+
+#status { margin: 20px; font-size: 2rem; font-weight: bold; }
+
+#start-btn {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-family: 'Comic Neue', cursive;
+    background: #FF6B6B;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #C94C4C;
+}
+
+#start-btn:active { transform: translateY(4px); box-shadow: none; }
